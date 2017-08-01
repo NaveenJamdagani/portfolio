@@ -11,9 +11,8 @@ body,html
 
 #portfolio
 {
-	width: 100%;
-	height: auto;
 	position: relative;
+	transition: 0.3s;
 }
 
 #portfolio.active
@@ -118,6 +117,11 @@ body,html
 {
 	background-color: crimson;
 	color: white;
+}
+
+#portfolio.active #left-nav-bar ul li
+{
+	border-bottom: 1px solid black;
 }
 /*Content*/
 #content
@@ -229,7 +233,6 @@ body,html
 .person-info-container .person-info-title
 {
 	width: 20%;
-	height: 100%;
 	float: left;
 	color: crimson;
 }
