@@ -13,4 +13,12 @@ $(document).ready(function()
 	{
 		$("#portfolio").toggleClass("active");
 	});
+	$("#slide-down").on("click",function()
+	{
+		window.scrollBy(0,600);
+	});
+	function scroll(x,y)
+	{
+		window.scrollBy(x,y);
+	}
 });
