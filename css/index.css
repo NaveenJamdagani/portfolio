@@ -192,7 +192,7 @@ body,html
 @keyframes bounce
 {
 	from{top:0px;}
-	to{top: 50%;}
+	to{top: 20%;}
 }
 
 #person-info #person-objective p
