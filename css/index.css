@@ -176,7 +176,7 @@ body,html
 #person-info #slide-down i
 {
 	position: relative;
-	top: 0;
+	top: 25%;
 	font-weight: bold;
 	padding-bottom: 5em;
 	font-size: 2em;
@@ -191,8 +191,8 @@ body,html
 
 @keyframes bounce
 {
-	from{top:0px;}
-	to{top: 20%;}
+	from{top:25%;}
+	to{top: 50%;}
 }
 
 #person-info #person-objective p
