@@ -15,6 +15,7 @@ $(document).ready(function()
 	});
 	$("#slide-down").on("click",function()
 	{
+		$("#left-nav-bar").toggleClass("active");
 		window.scrollBy(0,600);
 	});
 	function scroll(x,y)
