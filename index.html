@@ -23,13 +23,14 @@
 		</div>
 		<div id="left-nav-bar">
 			<ul>
-				<li onclick="scroll(0,0)">Home</li>
-				<li onclick="scroll(0,800)">Objective</li>
-				<li onclick="scroll(0,1000)">Education</li>
-				<li onclick="scroll(0,1500)">Skills</li>
-				<li onclick="scroll(0,1700)">Experience</li>
-				<li onclick="scroll(0,2500)">Projects</li>
-				<li onclick="scroll(0,2200)">Contacts</li>
+				<li data-id="portfolio">Home</li>
+				<li data-id="person-objective">Objective</li>
+				<li data-id="summary">Summary</li>
+				<li data-id="education">Education</li>
+				<li data-id="skills">Skills</li>
+				<li data-id="experience">Experience</li>
+				<li data-id="projects">Projects</li>
+				<li data-id="footer">Contacts</li>
 			</ul>
 		</div>
 		<div id="content">
@@ -49,7 +50,19 @@
 					MY OBJECTIVE IS TO EXCEL MY KNOWLEDGE IN <b>SOFTWARE ENGINEERING</b> THROUGH 	HARD WORK, RESEARCH, SKILLS AND DETERMINATION. AND HENCE USE THIS KNOWLEDGE TO SOLVE REAL WORLD PROBLEMS AND HELP IN MAKING THIS WORLD A SMART PLACE TO LIVE.
 				</p>
 			</div>
-			<div class="person-info-container">
+			<div class="person-info-container" id="summary">
+				<div class="person-info-title">
+					<h1>Summary</h1>
+				</div>
+				<div class="person-info-list" id="person-skills">
+					Everybody likes to develop something on their own. So here I am - worked at Reliance Comm. and Alcatel Lucent as RF Engineer with over 4 years of experience and is now changing career to Web Development with knowledge in HTML, CSS, JS, JQUERY and GIT.
+					<br><br>
+					<i style="color: crimson; display: inline-block; border-left: solid 3px crimson; padding-left: 1em">Let's not be the change, rather develop the change we wanna see in the world!!!</i>
+					<br><br>
+					I like to take risks and am very enthusiast about this software field where your work can actualy make a difference. That's the reason for this big leap. I am Looking forward to work in a community of people that are enthusiast to develop magic with computers and aid me in learning and exploring this wizardry... and I mean it!!
+				</div>
+			</div>
+			<div class="person-info-container" id="education">
 				<div class="person-info-title">
 					<h1>EDUCATION</h1>
 				</div>
@@ -78,7 +91,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="person-info-container">
+			<div class="person-info-container" id="skills">
 				<div class="person-info-title">
 					<h1>SKILLS</h1>
 				</div>
@@ -100,24 +113,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="person-info-container">
+			<div class="person-info-container" id="experience">
 				<div class="person-info-title">
 					<h1>Experience</h1>
 				</div>
 				<div class="person-info-list">
-					<div class="person-info-details">
-						<p class="title"><b>BSS Engineer</b></p>
-						<p class="sub-title">ALCATEL-LUCENT Managed Solutions</p>
-						<p class="sub-details">
-							Aug 2010-Sep 2014	
-						</p>
-						<p class="responsibilities">Project of Reliance Telecommunications PVT LTD</p>
-						<ul>
-							<li>Integration, Commisioning and Maintenance of Lucent and Huawei BTS.</li>
-							<li>Worked on Reliance 2g and 3g BTS.</li>
-							<li>Commisioning of BTS with the help of IManager2000 software.</li>
-						</ul>
-					</div>
 					<div class="person-info-details">
 						<p class="title"><b>Microwave Engineer</b></p>
 						<p class="sub-title">Ericsson Global PVT LTD.</p>
@@ -132,28 +132,76 @@
 							<li>Fault rectification.</li>
 						</ul>
 					</div>
+					<div class="person-info-details">
+						<p class="title"><b>BSS Engineer</b></p>
+						<p class="sub-title">ALCATEL-LUCENT Managed Solutions</p>
+						<p class="sub-details">
+							Aug 2010-Sep 2014	
+						</p>
+						<p class="responsibilities">Project of Reliance Telecommunications PVT LTD</p>
+						<ul>
+							<li>Integration, Commisioning and Maintenance of Lucent and Huawei BTS.</li>
+							<li>Worked on Reliance 2g and 3g BTS.</li>
+							<li>Commisioning of BTS with the help of IManager2000 software.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="person-info-container">
+			<div class="person-info-container" id="projects">
 				<div class="person-info-title">
 					<h1>Projects</h1>
 				</div>
 				<div class="person-info-list">
 					<div class="person-info-details">
-						<p class="title"><b>Front-End-Admin-Panel</b></p>
+						<p class="title"><b>Personal Portfolio</b></p>
 						<p class="sub-details">
 							<b>Skills</b>
 							<span>
-								HTML5, CSS3, JAVASCRIPT, JQUERRY	
+								HTML5, CSS3, JAVASCRIPT, JQUERY	
 							</span>
+							&nbsp;&nbsp;&nbsp;
+							<b>Duration</b>
+							<span>
+								2 days
+							</span>
+							<br>
+							<a href="https://github.com/NaveenJamdagani/portfolio" target="_blank">Source</a>
+							<a href="https://naveenjamdagani.github.io/portfolio/" target="_blank">Demo</a>
 						</p>
-						<p>A demo of front end admin panel</p>
+						<ul>
+							<li>Single page showcase of my Resume</li>
+							<li>Responsively designed page</li>
+							<li>Clean UI and smooth UX</li>
+							<li>Informative</li>
+						</ul>
+					</div>
+					<div class="person-info-details">
+						<p class="title"><b>Admin Panel</b></p>
+						<p class="sub-details">
+							<b>Skills</b>
+							<span>
+								HTML5, CSS3, JAVASCRIPT, JQUERY	
+							</span>
+							&nbsp;&nbsp;&nbsp;
+							<b>Duration</b>
+							<span>
+								15 Days
+							</span>
+							<br>
+							<a href="https://github.com/NaveenJamdagani/front-end-admin-panel" target="_blank">Source</a>
+							<a href="https://naveenjamdagani.github.io/front-end-admin-panel/" target="_blank">Demo</a>		
+						</p>
+						<ul>
+							<li>Front End Design of a basic Admin Panel</li>
+							<li>Showcases the basic functional components in the admin panel</li>
+							<li>Clean UI and smooth UX</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div id="footer">
 				<a href="mailto:njamdagani@gmail.com">mail</a> or 
-				<a href="https://github.com/NaveenJamdagani">github</a> or <a href="https://www.linkedin.com/in/naveenjamdagani/">linkedin</a>
+				<a href="https://github.com/NaveenJamdagani">github</a> or <a href="https://www.linkedin.com/in/naveenjamdagani/">linkedin</a> or <a href="tel:+91-7027024333">+91 - 7027024333</a>
 			</div>
 		</div>
 	</div>

@@ -15,6 +15,14 @@ body,html
 	padding: 0;
 }
 
+
+a {
+	text-decoration: none;
+	color: white;
+	margin: 0 0.5em;
+	display: inline-block;
+}
+
 #portfolio
 {
 	position: relative;
@@ -30,21 +38,23 @@ body,html
 	color: #dddddd;
 }
 
+#portfolio.active #header span {
+	box-shadow:  0 0 2em #000
+}
+
 #portfolio.active #toggle-day
 {
 	background-color: black;
-	box-shadow: none;
 }
 
 #portfolio.active #toggle-night
 {
 	background-color: crimson;
-	box-shadow: none;
 }
 
 #portfolio.active #toggle-content
 {
-	box-shadow: none;
+	background: #000;
 }
 /*Header*/
 #header span
@@ -139,6 +149,7 @@ body,html
 
 #portfolio.active #content {
 	background: #111;
+	box-shadow: 0 0 3em rgba(0,0,0,1);
 }
 
 /*Content*/
@@ -147,7 +158,8 @@ body,html
 	position: relative;
 	top: 0;
 	left: 0;
-	box-shadow: 1px 1px 10px lightgrey;
+	/*box-shadow: 1px 1px 10px lightgrey;*/
+	box-shadow: 0 0 3em rgba(0,0,0,0.15);
 	transition: 0.3s;
 	z-index: 1;
 	background: #f5f5f5;
@@ -158,7 +170,6 @@ body,html
 	top: 6em;
 	left: 12em;
 	background: whitesmoke;
-	box-shadow: 0 0 3em rgba(0,0,0,0.15);
 }
 
 /*Content- person-info*/
@@ -273,6 +284,7 @@ body,html
 	text-align: center;
 }
 
+
 .person-info-container .person-info-title h1 {
     font-weight: 400;
     margin: 0;
@@ -321,6 +333,18 @@ body,html
     padding: 1em 2em;
 }
 
+.sub-details a {
+    background: crimson;
+    border-radius: 2px;
+    padding: .25em 1em;
+    margin: 0.5em 1em 0 0;
+	opacity: .9;
+}
+
+.sub-details a:hover {
+	opacity: 1
+}
+
 .person-info-container .person-info-details .sub-details b {
 	padding-right: 1em;
 }
@@ -350,6 +374,22 @@ body,html
 	display: inline-block;
 	margin: 0 3em 2em 0;
 	padding: 10px;
+}
+
+@media only screen and (max-width: 600px)
+{
+	.person-info-container .person-info-title
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	.person-info-container .person-info-list
+	{
+		width: 100%;
+	}
 }
 
 /*Footer*/

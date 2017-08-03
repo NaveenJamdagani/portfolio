@@ -1,9 +1,13 @@
 $(document).ready(function()
 {
-	$("#toggle-content").on("click",function()
-	{
+	var toggleNav = function () {
 		$("#content").toggleClass("active");
 		$("#left-nav-bar").toggleClass("active");
+	}
+
+	$("#toggle-content").on("click",function()
+	{
+		toggleNav();
 	});
 	$("#toggle-day").on("click",function()
 	{
@@ -15,11 +19,17 @@ $(document).ready(function()
 	});
 	$("#slide-down").on("click",function()
 	{
-		$("#left-nav-bar").toggleClass("active");
-		window.scrollBy(0,600);
+		$('html,body').animate({
+	        scrollTop: $("#person-objective").offset().top - 100
+	    }, 'slow');
 	});
-	function scroll(x,y)
+	$("#left-nav-bar li").on("click",function()
 	{
-		window.scrollBy(x,y);
-	}
+		toggleNav();
+		
+		var id = $(this).data("id");
+		$('html,body').animate({
+	        scrollTop: $("#"+id).offset().top - 100
+	    }, 'slow');
+	});
 });
