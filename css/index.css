@@ -415,3 +415,8 @@ a {
 {
 	border-bottom: 1px dashed #f5f5f5;
 }
+
+#footer p
+{
+	padding-top: 1em;
+}
