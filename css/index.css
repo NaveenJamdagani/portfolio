@@ -392,6 +392,14 @@ a {
 	}
 }
 
+@media only screen and (max-width: 900px)
+{
+	#person-name h1
+	{
+		font-size: 3em;
+	}
+}
+
 /*Footer*/
 #footer
 {
