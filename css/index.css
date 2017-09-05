@@ -327,6 +327,28 @@ a {
 	margin-bottom: 2em;
 	border-radius: 2px;
 	padding-top: 0.5em;
+	cursor: pointer;
+	transition: all .25s;
+	position: relative;
+	z-index: 1;
+}
+
+.person-info-container .person-info-details:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 2px;
+	bottom: 0;
+	background-color: crimson;
+	width: 0px;
+	transition: all .5s ease-in-out;
+	z-index: 0;
+	margin: 0 auto;
+}
+
+.person-info-container .person-info-details:hover:before {
+	width: 100%;
 }
 
 #portfolio.active .person-info-details
@@ -380,16 +402,23 @@ a {
 	padding: 1em 2em 1em 3em;
 }
 
+#person-skills {
+	text-align: center;
+	/* display: inline-block; */
+	/* margin: 0 auto; */
+	/* width: auto; */
+}
+
 #person-skills div
 {
 	display: inline-block;
-	margin: 0 3em 2em 0;
+	/* margin: 0 3em 2em 0; */
 	padding: 10px;
-	width: 25%;
+	min-width: 180px;
 	/*! border-top-left-radius: 30px; */
 	/*! border-bottom-left-radius: 30px; */
 	/*! transform: rotate(-6deg); */
-	border-left: solid 2px crimson;
+	/* width: calc(33% - 4em); */
 }
 
 @media only screen and (max-width: 900px)
